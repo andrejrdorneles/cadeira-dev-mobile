@@ -1,7 +1,10 @@
 <h1>Aplicação</h1>
 <app-header />
 <br>
-<div>
+
+<router-outlet></router-outlet>
+
+<!-- <div>
   <h3>Menu</h3>
   <a [routerLink]="['user']">Usuários</a>
   <br>
@@ -12,7 +15,17 @@
   <a [routerLink]="['product', 100]">Produto id = 100</a>
 </div>
 <h3>Main content</h3>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+<!-- <app-binding />
+
+<h1>Exemplos de Pipe</h1>
+
+<p>Data: {{ umaData | date: 'long' }}</p>
+<p>Currency: {{ umDinheiro | currency }}</p>
+<p>Pipe Customizado upercase: {{nome | appupercase}}</p>
+
+<button (click)="sayHello()">Diga Ola pelo Servico</button> -->
 
 <!-- <div *ngIf="clientePremium; else naopremium">
   <h4>Você é um cliente premium tem acesso a informações diferenciadas</h4>
